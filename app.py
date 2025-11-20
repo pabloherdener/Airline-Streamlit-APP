@@ -94,6 +94,7 @@ elif page == "Exploratory Data Analysis":
     df_plot['Class'] = df_plot['Class'].map(class_map)
     df_plot['Customer Type'] = df_plot['Customer Type'].map(customer_type_map)
     df_plot['Gender'] = df_plot['Gender'].map(gender_map)
+    df_plot['Type of Travel'] = df_plot['Type of Travel'].map(type_travel_map)
 
     st.subheader("Select the type of visualization you'd like to explore:")
     eda_type = st.multiselect("Visualization Options", ['Histograms', 'Box Plots', 'Scatterplots', 'Count Plots'])
